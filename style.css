@@ -379,6 +379,10 @@ article {
     width: 500px;
   }
 
+  .main__img__wrapper {
+    width: 500px;
+  }
+
   .navbar {
     width: 500px;
     margin-inline: auto;
@@ -407,6 +411,11 @@ article {
     width: 400px;
   }
 
+  .main__img__wrapper {
+    width: 400px;
+  }
+
+
   .navbar {
     width: 400px;
   }
@@ -418,6 +427,10 @@ article {
 
 @media (max-width: 430px) {
   .img__mobile {
+    width: 250px;
+  }
+
+  .main__img__wrapper {
     width: 250px;
   }
 
