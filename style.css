@@ -25,11 +25,11 @@ body {
   font-family: "Inter", sans-serif;
   min-height: 100vh;
   min-height: 100dvh;
-  overflow-x: hidden;
 }
 main {
   margin-top: 10rem;
   scale: 1.2;
+  overflow-x: hidden;
 }
 
 img,
