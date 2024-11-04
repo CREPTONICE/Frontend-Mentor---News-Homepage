@@ -102,7 +102,7 @@ button {
   justify-content: flex-start;
   padding: 20px;
   transition: all 0.3s ease-in-out;
-
+  overflow-y: scroll;
   img {
     transition: all 0.3s ease-in-out;
     rotate: -180deg;
