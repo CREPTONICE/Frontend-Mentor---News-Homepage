@@ -19,19 +19,29 @@
       </div>
 
       <div class="navbar__links">
-        <ul>
-          <li><img onclick="openMenu()" src="icon-menu.svg" alt="" id="menu"></li>
-          <li id="nav__link"><a href="#" class="nav__link">Home</a></li>
-          <li id="nav__link"><a href="#" class="nav__link">New</a></li>
+
+        <ul class="nav_links_side" id="nav_links_side">
+          <li><img onclick="closeMenu()" src="icon-menu-close.svg" alt="" id="menu-close"></li>
+          <li id="nav__link"><a href="#main" class="nav__link">Home</a></li>
+          <li id="nav__link"><a href="#new" class="nav__link">New</a></li>
           <li id="nav__link"><a href="#" class="nav__link">Popular</a></li>
-          <li id="nav__link"><a href="#" class="nav__link">Trending</a></li>
+          <li id="nav__link"><a href="#card" class="nav__link">Trending</a></li>
+          <li id="nav__link"><a href="#" class="nav__link">Categories</a></li>
+        </ul>
+
+        <ul id="navlinks">
+          <li><img onclick="openMenu()" src="icon-menu.svg" alt="" id="menu"></li>
+          <li id="nav__link"><a href="#main" class="nav__link">Home</a></li>
+          <li id="nav__link"><a href="#new" class="nav__link">New</a></li>
+          <li id="nav__link"><a href="#" class="nav__link">Popular</a></li>
+          <li id="nav__link"><a href="#card" class="nav__link">Trending</a></li>
           <li id="nav__link"><a href="#" class="nav__link">Categories</a></li>
         </ul>
       </div>
       </nav>
 
       <section>
-    <div class="main">
+    <div class="main" id="main">
 <div class="main__img__wrapper">
         <img class="img__mobile" src="image-web-3-mobile.jpg" alt="">
         <img class="img__desktop" src="image-web-3-desktop.jpg" alt="">
@@ -56,7 +66,7 @@
      </div>
 
 
-      <div class="new">
+      <div class="new" id="new">
 
         <h1 class="new__title">NEW</h1>
 
@@ -87,7 +97,7 @@
       </section>
 
       <article>
-      <div class="card ">
+      <div class="card" id="card">
         <img src="image-retro-pcs.jpg" alt="" />
         <div class="card__words__container">
           <h2 class="card__title">01</h2>

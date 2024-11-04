@@ -1,31 +1,25 @@
-// window.addEventListener("resize", function () {
-//     // Get the current width of the window
-//     const windowWidth = window.innerWidth;
-//     // Select all elements with the class "nav__link"
-//     const elements = document.querySelectorAll(".nav__link");
-  
-//     // Specify the width at which you want to remove the elements
-//     const targetWidth = 880; // Example width
-  
-//     if (windowWidth <= targetWidth) {
-//       // Loop through the NodeList and remove each element from the DOM
-//       elements.forEach(element => {
-//         element.remove();
-//       });
-//     }
-//   });
+const OpenMenu = document.getElementById("menu");
+const TheMenu = document.querySelector(".nav_links_side");
+const closemenu = document.getElementById("menu-close");
 
-//   window.addEventListener("load", function () {
-//     const windowWidth = window.innerWidth;
-//     const elements = document.querySelector(".nav__link");
-//     const targetWidth = 880;
-  
-//     if (windowWidth <= targetWidth) {
-//       elements.forEach(element => {
-//         element.remove();
-//       });
-//     }
-// });
+function openMenu() {
+  TheMenu.style.display = "flex";
+  OpenMenu.classList.add("rotate");
+  TheMenu.classList.add("trol");
+  setTimeout(() => {
+    OpenMenu.classList.remove("rotate");
+  }, 300);
+}
 
-//   const elementsTest = document.querySelectorAll(".nav__link");
-//   console.log(elements);
+function closeMenu() {
+  // Remove the opening animation class
+  TheMenu.classList.remove("trol");
+
+  // Add the closing animation class
+  TheMenu.classList.add("trolled");
+
+  // Wait for the animation to complete before hiding the element
+  setTimeout(() => {
+    TheMenu.style.display = "none";
+  }, 1100); // 1200ms matches the duration of the 'trolled' animation
+}
